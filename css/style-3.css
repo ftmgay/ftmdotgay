@@ -51,6 +51,10 @@ footer {
     border: 1px solid #ccc;
 }
 
+#links-wrapper {
+   width: 50%;
+}
+
 @media screen and (max-width: 990px) {
     #toc-wrapper {
         width: 100% !important;
