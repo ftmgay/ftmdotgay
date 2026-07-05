@@ -60,4 +60,8 @@ footer {
     #toc {
         border: none !important;
     }
+
+    #links-wrapper {
+        width: 100% !important;
+    }
 }
