@@ -35,7 +35,6 @@ footer {
     font-size: 3.5rem;
     font-weight: 900;
     background: white;
-    /* background: linear-gradient(90deg, rgba(228, 3, 3, 1) 0%, rgba(255, 140, 0, 1) 16%, rgba(255, 237, 0, 1) 32%, rgba(0, 128, 38, 1) 48%, rgba(0, 76, 255, 1) 64%, rgba(115, 41, 130, 1) 80%); */
     background: url('/images/pride-rainbow-flag\ -\ Copy.jpg');
     background-size: cover;
     background-clip: text;
@@ -51,8 +50,12 @@ footer {
     border: 1px solid #ccc;
 }
 
-#links-wrapper {
+#links-wrapper{
    width: 50% !important;
+}
+
+#books-wrapper {
+   width: 75% !important;
 }
 
 @media screen and (max-width: 990px) {
@@ -65,7 +68,8 @@ footer {
         border: none !important;
     }
 
-    #links-wrapper {
+    #links-wrapper,
+    #books-wrapper {
         width: 100% !important;
     }
 }
