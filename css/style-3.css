@@ -51,7 +51,7 @@ footer {
 }
 
 #links-wrapper{
-   width: 50% !important;
+   width: fit-content !important;
 }
 
 #books-wrapper {
