@@ -87,6 +87,14 @@ footer {
    width: 75% !important;
 }
 
+.hero {
+    max-height: 500px;
+    max-width: 100%;
+    object-fit: cover;
+    border: 1px solid white;
+    box-shadow: 0px 1px 8px black;
+}
+
 @media screen and (max-width: 990px) {
     #toc-wrapper {
         width: 100% !important;
