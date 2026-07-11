@@ -41,22 +41,27 @@
         </nav>
     </header>
 
-    <main class="container-sm text-bg-dark py-4">
+    <main class="container-sm text-bg-dark bg-opacity-75 py-2 px-4">
 
         <div class="row" id="">
-            <div id="toc-wrapper" class="col-2 position-sticky top-0 h-75">
-                <nav id="toc" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <h2>FTM reading list</h2>
+            <details open id="toc-wrapper" class="col-3 position-sticky top-0 h-75 py-2 px-4 me-5 border-end">
+                <summary class="bg-secondary p-2 mb-1 border rounded">
+                    <h4 class="d-inline">table of contents</h4>
+                </summary>
+                <nav id="toc" class="h-100 flex-column align-items-stretch pe-4">
                     <nav class="nav nav-pills flex-column">
                         <a class="nav-link" href="#ftm">trans men & transmasculinity</a>
                         <a class="nav-link" href="#trans">transgender</a>
                     </nav>
-                </nav>
-            </div>
+            </details>
 
-            <div id="books-wrapper" class="position-sticky top-0 h-75">
-                <h2>FTM reading list</h2>
-                <section id="ftm">
-                    <h3>trans men & transmasculinity</h3>
+            <div id="books-wrapper" class="top-0 h-75 col-8">
+                <details open id="stores" class="p-2 my-2">
+                    <summary class="bg-secondary-subtle p-2 mb-1 border rounded">
+                        <h3 class="d-inline">trans men & transmasculinity
+                        </h3>
+                    </summary>
                     <ul id="booklist" class="list-group">
 
                         <li class="list-group-item">
@@ -172,10 +177,13 @@
                             </p>
                         </li>
                     </ul>
-                </section>
-                <br><br>
-                <section id="trans">
-                    <h3>transgender</h3>
+                </details>
+
+                <details open id="trans" class="p-2 my-2">
+                    <summary class="bg-secondary-subtle p-2 mb-1 border rounded">
+                        <h3 class="d-inline">transgender
+                        </h3>
+                    </summary>
                     <ul class="booklist list-group">
 
                         <li class="list-group-item">
@@ -311,7 +319,7 @@
                             </p>
                         </li>
                     </ul>
-                </section>
+                    </section>
             </div>
         </div>
     </main>

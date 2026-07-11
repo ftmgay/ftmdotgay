@@ -41,11 +41,15 @@
         </nav>
     </header>
 
-    <main class="container-sm text-bg-dark py-4">
+    <main class="container-sm text-bg-dark bg-opacity-75 py-2 px-4">
 
         <div class="row" id="">
-            <div id="toc-wrapper" class="col-2 position-sticky top-0 h-75">
-                <nav id="toc" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <h2 id="welcome">FTM resources</h2>
+            <details open id="toc-wrapper" class="col-3 position-sticky top-0 h-75 py-2 px-4 me-5 border-end">
+                <summary class="bg-secondary p-2 mb-1 border rounded">
+                    <h4 class="d-inline">table of contents</h4>
+                </summary>
+                <nav id="toc" class="h-100 flex-column align-items-stretch pe-4">
                     <nav class="nav nav-pills flex-column">
                         <a class="nav-link" href="#stores">stores</a>
                         <nav class="nav nav-pills flex-column">
@@ -59,21 +63,21 @@
                             <a class="nav-link ms-3 my-1" href="#top">top surgery</a>
                             <a class="nav-link ms-3 my-1" href="#bottom">bottom surgery</a>
                         </nav>
-                        <a class="nav-link" href="#other">helpful links</a>
+                        <a class="nav-link" href="#other">other resources</a>
                     </nav>
                 </nav>
-            </div>
+            </details>
 
-            <div class="" id="links-wrapper">
-                <div>
-                    <h2 id="welcome">FTM resources</h2>
+            <div class="col-8" id="links-wrapper">
+                <details open id="stores" class="p-2 my-2">
+                    <summary class="bg-secondary-subtle p-2 mb-1 border rounded">
+                        <h3 class="d-inline">stores
+                        </h3>
+                    </summary>
+                    <p> 🏳️‍⚧️ = trans owned</p>
 
-                    <div id="stores">
-                        <h3>stores</h3>
-                        <p> 🏳️‍⚧️ = trans owned</p>
-                    </div>
 
-                    <div id="general">
+                    <div id="general" class="px-4 py-0">
                         <h4>general</h4>
                         <ul class="list-group">
                             <li class="list-group-item"><a href="https://transguysupply.com/">Trans Guy Supply</a>
@@ -87,7 +91,7 @@
                         </ul>
                     </div>
 
-                    <div id="binding">
+                    <div id="binding" class="px-4 py-2">
                         <h4>binding</h4>
                         <ul class="list-group">
                             <li class="list-group-item"><a href="https://www.underworks.com/">Underworks</a>
@@ -105,14 +109,14 @@
                         </ul>
                     </div>
 
-                    <div id="packing">
+                    <div id="packing" class="px-4 py-2">
                         <h4>packing</h4>
                         <ul class="list-group">
                             <li class="list-group-item"><a href="https://transthetics.com/">Transthetics</a> 🏳️‍⚧️
                             </li>
                             <li class="list-group-item"><a href="https://peecockproducts.com/">Peecock</a> 🏳️‍⚧️ </li>
                             <li class="list-group-item"><a href="https://www.reelmagik.com/">ReelMagik</a> 🏳️‍⚧️ </li>
-                            <li class="list-group-item"><a href="https://gendercat.com/">GenderCat</a> 🏳️‍⚧️ 
+                            <li class="list-group-item"><a href="https://gendercat.com/">GenderCat</a> 🏳️‍⚧️
                             </li>
                             <li class="list-group-item"><a href="https://axolom.com/">Axolom</a>
                             </li>
@@ -120,9 +124,13 @@
                             </li>
                         </ul>
                     </div>
+                </details>
 
-                    <div id="test">
-                        <h3>testosterone</h3>
+                <details open id="test" class="p-2 my-2">
+                    <summary class="bg-secondary-subtle p-2 mb-1 border rounded">
+                        <h3 class="d-inline">testosterone</h3>
+                    </summary>
+                    <div class="px-4 p-2 my-2">
                         <ul class="list-group">
                             <li class="list-group-item"><a
                                     href="https://www.folxhealth.com/library/informed-consent-testosterone-hrt">Informed
@@ -164,9 +172,13 @@
                             </li>
                         </ul>
                     </div>
+                </details>
 
-                    <div id="surgery">
-                        <h3>surgery</h3>
+                <details open id="surgery" class="p-2 my-2">
+                    <summary class="bg-secondary-subtle p-2 mb-1 border rounded">
+                        <h3 class="d-inline">surgery</h3>
+                    </summary>
+                    <div class="px-4 p-2 my-2">
                         <ul class="list-group">
                             <li class="list-group-item">
                                 <a href="https://www.transhealthcare.org/">TransHealthcare</a>
@@ -225,10 +237,13 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                </details>
 
-                    <div id="other">
-                        <h3>helpful links</h3>
+                <details open id="other" class="p-2 my-2">
+                    <summary class="bg-secondary-subtle p-2 mb-1 border rounded">
+                        <h3 class="d-inline">other resources</h3>
+                    </summary>
+                    <div class="px-4 p-2 my-2">
                         <ul class="list-group">
                             <li class="list-group-item"><a href="https://heyimtrans.com/">Hey I'm Trans</a>
                                 <ul class="list-group list-group-flush">
@@ -257,18 +272,18 @@
                             <li class="list-group-item"><a href="https://transguys.com/">TransGuys.com</a></li>
                         </ul>
                     </div>
-                </div>
+                </details>
             </div>
-
-            <article>
-
-
+        </div>
+        <article>
 
 
 
 
 
-            </article>
+
+
+        </article>
 
 
     </main>
