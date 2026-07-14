@@ -46,7 +46,7 @@ main {
     flex: 1 0 auto;
     margin: 0 auto;
     padding: 0 4%;
-    --bs-bg-opacity: 0.9 !important;
+    --bs-bg-opacity: 0.8 !important;
 }
 
 main p,
@@ -72,43 +72,41 @@ figure {
     -webkit-text-fill-color: transparent;
 }
 
-.quotes-wrapper>span:nth-child(even) {
-    position: relative;
-    left: 30%;
+#index-wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.quotes-wrapper {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .quote {
     font-size: 1.1rem;
     display: block;
-    width: 70%;
-    text-wrap: balance;
+    margin: 6% 0;
 }
 
 .quote q {
     font-style: italic;
-    display: block;
+    /* width: fit-content; */
+    text-wrap: balance;
 }
 
 .quote p {
     font-size: 1rem;
+    text-align: right;
+    max-width: initial;
 }
 
-
-/* #index-links {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    margin: 3rem 0;
+#index-links>a {
+    width: 45%;
+    text-wrap: balance;
+    padding: 2%;
 }
 
-#index-links div {
-    width: 40%;
-    text-align: center;
-    padding: 1rem;
-    background: rgba(200, 201, 202, 0.1)
-}
-
-#index-links div a {
+/* #index-links>div a {
     width: 100%;
 } */
 
@@ -154,5 +152,19 @@ figure {
 
     .quote {
         width: 90%;
+    }
+
+    #index-wrapper {
+        width: 100%;
+    }
+
+    #index-links {
+        flex-flow: column;
+        align-content: space-around;
+    }
+
+    #index-links>a {
+        width: 100%;
+        margin: 4% 0;
     }
 }
