@@ -13,6 +13,10 @@ h4 {
     padding: 2% 0 1%;
 }
 
+main a {
+    /* color: rgb(122, 208, 255) !important; */
+}
+
 html,
 body {
     height: 100%;
@@ -21,27 +25,40 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(170deg, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+    background-image: linear-gradient(170deg, #215e5c 0%, #204f62 31%, #482967 100%);
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+footer {
+    flex-shrink: 0;
+}
+
+main,
+main nav {
+    --bs-nav-link-color: #7babee !important;
+    --bs-link-rgb: #7babee !important;
+    font-size: 1.1rem;
+}
+
 main {
     flex: 1 0 auto;
-    width: fit-content;
     margin: 0 auto;
     padding: 0 4%;
+    --bs-bg-opacity: 0.9 !important;
 }
 
 main p,
 main q,
-main li {
+main li,
+main a {
     max-width: 85ch;
+    font-size: 1.1rem;
 }
 
-footer {
-    flex-shrink: 0;
+figure {
+    text-align: center;
 }
 
 #title {
@@ -64,6 +81,7 @@ footer {
     font-size: 1.1rem;
     display: block;
     width: 70%;
+    text-wrap: balance;
 }
 
 .quote q {
@@ -74,6 +92,25 @@ footer {
 .quote p {
     font-size: 1rem;
 }
+
+
+/* #index-links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 3rem 0;
+}
+
+#index-links div {
+    width: 40%;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(200, 201, 202, 0.1)
+}
+
+#index-links div a {
+    width: 100%;
+} */
 
 .covers {
     width: 20%;
